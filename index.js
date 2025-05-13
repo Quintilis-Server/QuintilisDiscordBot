@@ -17,7 +17,7 @@ new CommandKit({
     client,
     eventsPath: path.join(__dirname, 'events'),
     commandsPath: path.join(__dirname, 'commands'),
-    validationsPath: path.join(__dirname, 'validations'),
+    //validationsPath: path.join(__dirname, 'validations'),
     devGuildIds: ['1352472063197315156','546567498783391744'],
     devUserIds: ['449324241704452107', '280139037367468032'],
     bulkRegister: true,
