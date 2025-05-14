@@ -2,6 +2,19 @@ require('dotenv/config');
 const {Client, GatewayIntentBits} = require('discord.js');
 const {CommandKit} = require('commandkit');
 const path = require('path');
+const mongoose = require("mongoose");
+
+mongoose.connect(process.env.MONGODB_URL)
+    .then(() => console.log('Connected to database!'))
+    .catch(err => console.error("Connection Error: ", err));
+
+
+
+
+
+
+
+
 
 const client = new Client({
     intents:[
